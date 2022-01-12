@@ -1,3 +1,4 @@
+// Auxilio do grupo de estudos para resolução
 const { species, hours } = require('../data/zoo_data');
 
 const days = Object.keys(hours);

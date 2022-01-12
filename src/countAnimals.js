@@ -1,3 +1,5 @@
+// Auxilio do grupo de estudos para resolução
+
 const { species } = require('../data/zoo_data');
 
 function countAnimals(animal) {

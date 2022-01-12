@@ -1,3 +1,4 @@
+// Auxilio do grupo de estudos para resolução
 const { employees, species } = require('../data/zoo_data');
 
 function getOldestFromFirstSpecies(id) {

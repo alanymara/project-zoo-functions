@@ -1,3 +1,4 @@
+// Auxilio do grupo de estudos para resolução
 const { prices } = require('../data/zoo_data');
 
 function countEntrants(entrants) {
