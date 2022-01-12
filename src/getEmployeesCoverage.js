@@ -13,11 +13,13 @@ function getEmployeesCoverage(personIdentification) {
       locations: getInformations(responsibleFor, 'location') };
     return object;
   });
-  /* if (objectEmployees.filter((employee) => employee.fullName
-    .includes(personIdentification))) {
-    return 
-  } */
-  return objectEmployees;
+  if (!personIdentification) {
+    return objectEmployees;
+  }
+  const verification = objectEmployees.filter((employee) => employee.fullName
+    .includes(personIdentification.name) || employee.id.includes(personIdentification.id));
+  if (verification.length !== 0) return verification[0];
+  throw new Error('Informações inválidas');
 }
-console.log(getEmployeesCoverage());
+
 module.exports = getEmployeesCoverage;
